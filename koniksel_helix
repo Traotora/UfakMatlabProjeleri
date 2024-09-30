@@ -1,0 +1,9 @@
+a= 0.5;                         % TARÝH : 26 / 12 / 2018 ÇARÞAMBA
+c= 0.15;
+t= 0:0.001:10*pi;        % 0<t<10pi 0.0001 aralýlarla grafik çizer.
+x= (a*t/2*pi*c).*sin(t); % Koniksel Helix' in matemetiksel ifadesi.
+y= (a*t/2*pi*c).*cos(t); %    "        "         "           "
+z= t/(2*pi*c);           %    "        "         "           "
+
+figure
+plot3(x,y,z)             % Grafikte göster.
